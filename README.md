@@ -77,6 +77,7 @@ To test transactions after starting all components, run `$ ./tryout.sh`.
 
 To test transactions using the godog tool, run `$ ./godog.sh`.
 
+```npm rebuild --target=8.1.0 --target_platform=linux --target_arch=x64 --target_libc=glibc --update-binary```
 ## More
 
 You can reach GoLedger developers and `cc-tools` maintainers at our Discord - [Join us!](https://discord.gg/GndkYHxNyQ)
