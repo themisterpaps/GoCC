@@ -1,7 +1,17 @@
 version: '3'
 services:
-  goinitus:
+  goinitus0:
     image: goledger/cc-webclient:latest
-    container_name: goinitus
+    container_name: goinitus0
     ports:
       - "8080:80"
+  goinitus1:
+    image: goledger/cc-webclient:latest
+    container_name: goinitus1
+    ports:
+      - "8081:80"
+  goinitus2:
+    image: goledger/cc-webclient:latest
+    container_name: goinitus2
+    ports:
+      - "8082:80"
