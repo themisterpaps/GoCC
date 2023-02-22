@@ -10,7 +10,5 @@ var txList = []tx.Transaction{
 	tx.CreateAsset,
 	tx.UpdateAsset,
 	tx.DeleteAsset,
-	txdefs.GetNumberOfBooksFromLibrary,
 	txdefs.UpdateBookTenant,
-	txdefs.GetBooksByAuthor,
 }
