@@ -18,8 +18,6 @@ var Duat = assets.AssetType{
 			DataType: "string",
 		},
 		{
-			Required: true,
-			IsKey:    true,
 			Tag:      "nr_nuit",
 			Label:    "NUIT",
 			DataType: "->municipe",
