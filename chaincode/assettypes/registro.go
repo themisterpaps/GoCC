@@ -12,15 +12,9 @@ var Registro = assets.AssetType{
 		{
 			Required: true,
 			IsKey:    true,
-			Tag:      "nr_processo",
-			Label:    "Numero do processo",
-			DataType: "string",
-		},
-
-		{
 			Tag:      "nr_certidao",
-			Label:    "Numero da certidao",
-			DataType: "number",
+			Label:    "Numero da Certidao de Benfeitorias",
+			DataType: "string",
 		},
 		{
 			Tag:      "descricao",
@@ -29,7 +23,7 @@ var Registro = assets.AssetType{
 		},
 		{
 			Tag:      "data_emissao",
-			Label:    "Data de Emissao",
+			Label:    "Data de Emissao da Certidao",
 			DataType: "datetime",
 		},
 		{

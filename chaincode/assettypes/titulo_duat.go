@@ -3,18 +3,17 @@ package assettypes
 import "github.com/goledgerdev/cc-tools/assets"
 
 // Description of a book
-var Titulo = assets.AssetType{
-	Tag:         "titulo",
-	Label:       "Titulo",
-	Description: "Titulo",
+var Titulo_duat = assets.AssetType{
+	Tag:         "titulo_duat",
+	Label:       "Titulo de DUAT",
+	Description: "Titulo de DUAT",
 
 	Props: []assets.AssetProp{
 		{
-			// Composite Key
 			Required: true,
 			IsKey:    true,
-			Tag:      "nr_processo",
-			Label:    "Numero do processo",
+			Tag:      "nr_titulo",
+			Label:    "Numero do Titulo",
 			DataType: "string",
 		},
 
@@ -33,5 +32,11 @@ var Titulo = assets.AssetType{
 			Label:    "url do titulo",
 			DataType: "datetime",
 		},
+		{
+			Tag:      "data_emissao",
+			Label:    "data de emissao",
+			DataType: "datetime",
+		},
+
 	},
 }

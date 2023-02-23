@@ -3,52 +3,47 @@ package assettypes
 import "github.com/goledgerdev/cc-tools/assets"
 
 // Description of a book
-var Licensa = assets.AssetType{
-	Tag:         "licensa",
-	Label:       "Licensa",
-	Description: "Licensa",
+var Licenca = assets.AssetType{
+	Tag:         "licenca",
+	Label:       "Licenca de Construção",
+	Description: "Licenca de Construção",
 
 	Props: []assets.AssetProp{
 		{
 			Required: true,
 			IsKey:    true,
-			Tag:      "nr_processo",
-			Label:    "Nr do Processo",
+			Tag:      "nr_licenca",
+			Label:    "Nr da licença",
 			DataType: "string",
 		},
 		{
-			Tag:      "planta",
+			Tag:      "url_planta",
 			Label:    "Planta Topografica",
 			DataType: "string",
 		},
 		{
-			Tag:      "area",
-			Label:    "Area ",
-			DataType: "number",
-		},
-		{
 			Tag:      "memoria",
-			Label:    "Memoria ",
+			Label:    "Memoria descritiva",
 			DataType: "string",
 		},
 		{
 			Tag:      "certidao",
-			Label:    "Certidao",
+			Label:    "Certidao Benfeitorias",
 			DataType: "string",
 		},
 		{
-			Tag:      "url",
+			Tag:      "url_licenca",
 			Label:    "url da Licensa",
 			DataType: "string",
 		},
 		{
-			Tag:      "data",
+			Tag:      "data_emissao",
 			Label:    "data de emissao",
 			DataType: "datetime",
 		},
 		{
-			Tag:      "prazo",
-			Label:    "prazo de validade",
+			Tag:      "data_validade",
+			Label:    "data de validade",
 			DataType: "datetime",
 		},
 	},

@@ -13,25 +13,23 @@ var Municipe = assets.AssetType{
 			// Single Key
 			Required: true,
 			IsKey:    true,
-			Tag:      "nuit",
+			Tag:      "nr_nuit",
 			Label:    "NUIT",
 			DataType: "number",
 		},
-
 		{
-
 			Tag:      "nome",
 			Label:    "Nome Completo",
 			DataType: "string",
 		},
 		{
 
-			Tag:      "dataDeNascimento",
+			Tag:      "data_nascimento",
 			Label:    "Data de Nascimento",
 			DataType: "datetime",
 		},
 		{
-			Tag:      "estadoCivil",
+			Tag:      "estado_civil",
 			Label:    "Estado Civil",
 			DataType: "string",
 		},
@@ -46,27 +44,71 @@ var Municipe = assets.AssetType{
 			DataType: "string",
 		},
 		{
-			Tag:      "nuic",
-			Label:    "NUIC",
+			Tag:      "url_declaracao",
+			Label:    "URL Declaracao do bairro",
+			DataType: "string",
+		},
+		//IDENTIFICACAO
+		{
+			Tag:      "nr_BI",
+			Label:    "Numero do BI",
 			DataType: "string",
 		},
 		{
-			// String list
-			Tag:      "declaracao",
-			Label:    "Declaracao do bairro",
+			Tag:      "tipo_documentos",
+			Label:    "Tipo de Documento",
 			DataType: "string",
 		},
 		{
-			// Objecto ID
-			Tag:      "id",
-			Label:    "Identificacao",
-			DataType: "->id",
+
+			Tag:      "data_emissao",
+			Label:    "Data de emissao",
+			DataType: "datetime",
 		},
 		{
-			// Objecto endereco
-			Tag:      "endereco",
-			Label:    "Endereco",
-			DataType: "[]->endereco",
+
+			Tag:      "data_validade",
+			Label:    "Data de validade",
+			DataType: "datetime",
+		},
+		{
+			Tag:      "local",
+			Label:    "Local de Emissao",
+			DataType: "string",
+		},
+		{
+			Tag:      "url",
+			Label:    "url do BI",
+			DataType: "string",
+		},
+
+		//Endereço
+		{
+
+			Tag:      "bairro",
+			Label:    "Bairro",
+			DataType: "string",
+		},
+		{
+			Tag:      "provincia",
+			Label:    "provincia",
+			DataType: "string",
+		},
+		{
+
+			Tag:      "municipio",
+			Label:    "Municipio",
+			DataType: "string",
+		},
+		{
+			Tag:      "distrito",
+			Label:    "Distrito Municipal",
+			DataType: "string",
+		},
+		{
+			Tag:      "posto",
+			Label:    "Posto administrativo",
+			DataType: "string",
 		},
 		{
 			// String list
@@ -78,7 +120,7 @@ var Municipe = assets.AssetType{
 			// String list
 			Tag:      "email",
 			Label:    "email",
-			DataType: "number",
+			DataType: "string",
 		},
 	},
 }

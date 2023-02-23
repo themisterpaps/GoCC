@@ -7,14 +7,12 @@ import (
 
 var assetTypeList = []assets.AssetType{
 	assettypes.Library,
-	assettypes.Licensa,
+	assettypes.Licenca,
 	assettypes.Duat,
 	assettypes.Municipe,
-	assettypes.ID,
-	assettypes.Endereco,
-	assettypes.Verificacao,
-	assettypes.Titulo,
 	assettypes.Registro,
 	assettypes.Parecer,
 	assettypes.Parcela,
+	assettypes.Duat_provisorio,
+	assettypes.Titulo_duat,
 }

@@ -10,52 +10,53 @@ var Duat = assets.AssetType{
 
 	Props: []assets.AssetProp{
 		{
-			// Composite Key
+			//Key
 			Required: true,
 			IsKey:    true,
 			Tag:      "nr_processo",
 			Label:    "Nr processo",
 			DataType: "string",
-			Writers:  []string{`org1MSP`, "orgMSP"}, // This means only org2 can create the asset (others can edit)
 		},
 		{
-			// Composite Key
 			Required: true,
 			IsKey:    true,
-			Tag:      "nuit",
+			Tag:      "nr_nuit",
 			Label:    "NUIT",
-			DataType: "string",
-			Writers:  []string{`org1MSP`, "orgMSP"}, // This means only org2 can create the asset (others can edit)
+			DataType: "->municipe",
 		},
 		{
 			/// Reference to another asset
-			Tag:      "info_parcela",
-			Label:    "Informação da Terra",
+			Tag:      "nr_parcela",
+			Label:    "Informação da Parcela de Terra",
 			DataType: "->parcela",
 		},
 		{
-			// String list
 			Tag:      "parecer",
 			Label:    "Parecer Tecnico",
 			DataType: "->parecer",
 		},
 		{
-			// String list
-			Tag:      "licensa",
-			Label:    "Licensa de Construção",
-			DataType: "->licensa",
+			Tag:      "duat_provisorio",
+			Label:    "DUAT provisório",
+			DataType: "->duat_provisorio",
 		},
 		{
-			// String list
+			
+			Tag:      "licenca",
+			Label:    "Licenca de Construção",
+			DataType: "->licenca",
+		},
+		{
+			
+			Tag:      "titulo",
+			Label:    "Titulo de DUAT",
+			DataType: "->titulo_duat",
+		},
+		{
+			
 			Tag:      "registro",
 			Label:    "registro de propriedade",
 			DataType: "->registro",
-		},
-		{
-			// String list
-			Tag:      "titulo",
-			Label:    "Titulo de DUAT",
-			DataType: "->titulo",
 		},
 	},
 }

@@ -13,36 +13,68 @@ var Parecer = assets.AssetType{
 			// Composite Key
 			Required: true,
 			IsKey:    true,
-			Tag:      "nr_processo",
-			Label:    "Nr processo",
+			Tag:      "nr_despacho",
+			Label:    "Nr despacho",
+			DataType: "string",
+		},
+
+		//Verificação do técnico da SG
+		{
+			Tag:      "nome_tec_sg",
+			Label:    "Nome do Tecnico da SG",
 			DataType: "string",
 		},
 		{
-			Tag:      "parecer_sg",
-			Label:    "Parecer da SG",
-			DataType: "->verificacao",
+			Tag:      "aprovacao_sg",
+			Label:    "Resposta de Aprovacao da SG",
+			DataType: "string",
 		},
+		//Verificação do técnico da R.ACL
 		{
-			// String list
-			Tag:      "parecer_rduat",
-			Label:    "Parecer do RDUAT",
-			DataType: "->verificacao",
-		},
-		{
-			// String list
-			Tag:      "parecer_ral",
-			Label:    "Parecer do RAL",
-			DataType: "->verificacao",
-		},
-		{
-			Tag:      "dir_documento",
-			Label:    "url do documento",
+			Tag:      "nome_tec_racl",
+			Label:    "Nome do Tecnico da RACL",
 			DataType: "string",
 		},
 		{
-			Tag:      "despacho",
-			Label:    "url do despacho",
+			Tag:      "aprovacao_racl",
+			Label:    "Resposta de Aprovacao da RACL",
 			DataType: "string",
 		},
+		//Verificação do técnico da R.DUAT
+		{
+			Tag:      "nome_tec_rduat",
+			Label:    "Nome do Tecnico da RDUAT",
+			DataType: "string",
+		},
+		{
+			Tag:      "aprovacao_rduat",
+			Label:    "Resposta de Aprovacao da RDUAT",
+			DataType: "string",
+		},
+			//parecer do director 
+		{
+			Tag:      "nome_diretor",
+			Label:    "Nome do Director",
+			DataType: "string",
+		},
+		{
+			Tag:      "descricao",
+			Label:    "Descricao do parecer",
+			DataType: "string",
+		},
+		 
+		{
+			Tag:      "url_despacho",
+			Label:    "URL Despacho",
+			DataType: "string",
+		},
+		{
+			Tag:      "url_parecer",
+			Label:    "URL Despacho",
+			DataType: "string",
+		},
+		 
+		 
+		
 	},
 }
