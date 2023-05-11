@@ -30,7 +30,7 @@ var Titulo_duat = assets.AssetType{
 		{
 			Tag:      "url",
 			Label:    "url do titulo",
-			DataType: "datetime",
+			DataType: "string",
 		},
 		{
 			Tag:      "data_emissao",
