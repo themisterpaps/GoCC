@@ -31,7 +31,7 @@ var Titulo = assets.AssetType{
 		{
 			Tag:      "url",
 			Label:    "url do titulo",
-			DataType: "datetime",
+			DataType: "string",
 		},
 	},
 }
